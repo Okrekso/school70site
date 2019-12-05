@@ -28,9 +28,9 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        include: [
-          path.resolve(__dirname, 'scss')
-        ],
+        // include: [
+        //   path.resolve(__dirname, 'scss')
+        // ],
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
@@ -51,6 +51,6 @@ module.exports = {
     historyApiFallback: true,
     overlay: true,
     host: 'localhost',
-    port: 8080,
+    port: 5000,
   }
 };
