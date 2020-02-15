@@ -8,6 +8,7 @@ import React, {
 import { render } from "react-dom";
 import Header from "./header/header";
 import TimerBlock from "./timerBlock/timerBlock";
+import EventBlock from "./eventBlock/eventBlock";
 
 export default function renderSite(to) {
   render(<Site />, to);
@@ -18,6 +19,7 @@ function Site() {
     <>
       <Header />
       <TimerBlock />
+      <EventBlock/>
     </>
   );
 }
