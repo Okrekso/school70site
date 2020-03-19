@@ -6,9 +6,11 @@ import React, {
   useMemo
 } from "react";
 import { render } from "react-dom";
-import Header from "./header/header";
-import TimerBlock from "./timerBlock/timerBlock";
-import EventBlock from "./eventBlock/eventBlock";
+
+import "../scss/global.scss";
+
+import EventBlock from "./eventBlockComponent/eventBlock";
+
 
 export default function renderSite(to) {
   render(<Site />, to);
@@ -16,10 +18,8 @@ export default function renderSite(to) {
 
 function Site() {
   return (
-    <>
-      <Header />
-      <TimerBlock />
-      <EventBlock/>
-    </>
+    <div id="content">
+      <EventBlock/>  
+    </div>
   );
 }
