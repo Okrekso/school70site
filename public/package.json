@@ -13,6 +13,7 @@
     "firebase": "^7.5.0",
     "google-maps-react": "^2.0.2",
     "jquery": "^3.4.1",
+    "moment": "^2.24.0",
     "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
     "react": "^16.12.0",

@@ -1,8 +1,13 @@
 import React, {useState} from 'react';
 import './eventBlock.scss';
+import './media-style.scss';
 import EventCard from './eventCard';
 
+
+
 function eventBlock(props){
+
+    console.log.
 
     return(
     <div id="eventBlock">
