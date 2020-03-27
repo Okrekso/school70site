@@ -6,17 +6,20 @@ import EventCard from './eventCard';
 
 
 function eventBlock(props){
-
-    console.log.
+    // moment.locale('ru'); 
+    // console.log(moment().format('MMMM'));
+    // console.log(moment().format('D'));
+    // console.log(moment('2015/03/05').format('D'));
 
     return(
     <div id="eventBlock">
         <EventCard title="Відпочинок в парку" 
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptate voluptatibus est exercitationem at saepe tempora debitis? Voluptatem quod neque officia quae tempora facere nam soluta sit, eligendi explicabo voluptatibus!" 
-        imgSrc="/img/1.jpg" dateDay="13" dateMonth="April" />
-        <EventCard title="Тренування в басейні" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptate voluptatibus est exercitationem at saepe tempora debitis? Voluptatem quod neque officia quae tempora facere nam soluta sit, eligendi explicabo voluptatibus!" imgSrc="img/2.jpg" dateDay="8" dateMonth="May" />
-        <EventCard title="Похід до музею" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptate voluptatibus est exercitationem at saepe tempora debitis? Voluptatem quod neque officia quae tempora facere nam soluta sit, eligendi explicabo voluptatibus!" imgSrc="img/3.jpg" dateDay="19" dateMonth="May" />
-        <EventCard title="Екскурсія у Львів" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptate voluptatibus est exercitationem at saepe tempora debitis? Voluptatem quod neque officia quae tempora facere nam soluta sit, eligendi explicabo voluptatibus!" imgSrc="img/4.jpg" dateDay="23" dateMonth="August" />
+            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptate voluptatibus est exercitationem at saepe tempora debitis? Voluptatem quod neque officia quae tempora facere nam soluta sit, eligendi explicabo voluptatibus!" 
+            imgSrc="/img/1.jpg" 
+            date="2020/05/12"/>
+        <EventCard title="Тренування в басейні" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptate voluptatibus est exercitationem at saepe tempora debitis? Voluptatem quod neque officia quae tempora facere nam soluta sit, eligendi explicabo voluptatibus!" imgSrc="img/2.jpg" date="2020/07/02" />
+        <EventCard title="Похід до музею" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptate voluptatibus est exercitationem at saepe tempora debitis? Voluptatem quod neque officia quae tempora facere nam soluta sit, eligendi explicabo voluptatibus!" imgSrc="img/3.jpg" date="2020/08/16" />
+        <EventCard title="Екскурсія у Львів" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptate voluptatibus est exercitationem at saepe tempora debitis? Voluptatem quod neque officia quae tempora facere nam soluta sit, eligendi explicabo voluptatibus!" imgSrc="img/4.jpg" date="2020/10/19" />
     </div>
     )
 
