@@ -6,6 +6,7 @@ import React, {
   useMemo
 } from "react";
 import { render } from "react-dom";
+import App from './App';
 import Header from "./header/header";
 import TimerBlock from "./timerBlock/timerBlock";
 
@@ -16,8 +17,9 @@ export default function renderSite(to) {
 function Site() {
   return (
     <>
-      <Header />
-      <TimerBlock />
+    {/* <text>lol</text> */}
+    <App/>
+    {/* <Header/> */}
     </>
   );
 }
