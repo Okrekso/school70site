@@ -2,7 +2,7 @@ import React from 'react'
 import { Typography, Paper, Avatar, Button } from '@material-ui/core'
 import VerifiedUserOutlined from '@material-ui/icons/VerifiedUserOutlined'
 import withStyles from '@material-ui/core/styles/withStyles'
-import firebase from '../firebase'
+import firebase from "../../js/firebase";
 import { withRouter } from 'react-router-dom'
 import styles from './styles';
 

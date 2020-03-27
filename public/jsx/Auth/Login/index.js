@@ -3,7 +3,7 @@ import { Typography, Paper, Avatar, Button, FormControl, Input, InputLabel } fro
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import withStyles from '@material-ui/core/styles/withStyles'
 import { Link, withRouter } from 'react-router-dom'
-import firebase from '../../firebase'
+import firebase from "../../../js/firebase";
 import styles from './styles';
 
 
