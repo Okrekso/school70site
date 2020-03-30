@@ -55,9 +55,10 @@ function SignIn(props) {
 		</main>
 	)
 
-	async function login() {
+	function login() {
+		console.log("in login")
 		try {
-			await firebase.login(email, password)
+			firebase.auth.signInWithEmailAndPassword(email, password)
 			props.history.replace('/dashboard')
 		} catch(error) {
 			alert(error.message)

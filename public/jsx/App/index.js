@@ -15,11 +15,10 @@ export default function App() {
 
 	const [firebaseInitialized, setFirebaseInitialized] = useState(false)
 
-	useEffect(() => {
-		// firebase.isInitialized().then(val => {
-		// 	setFirebaseInitialized(val)
-		// })
-	})
+	 useEffect(() => {
+		 setFirebaseInitialized(firebase.auth.currentUser); 
+		 console.log(firebaseInitialized);
+	 })
 
 
 	return firebaseInitialized !== false ? (
@@ -28,11 +27,12 @@ export default function App() {
 			<Router>
 				<Switch>
 					<Route exact path="/" component={HomePage} />
-					{/* <Route exact path="/login" component={Login} /> */}
-					{/* <Route exact path="/register" component={Register} /> */}
+					<Route exact path="/login" component={Login} />
+					<Route exact path="/register" component={Register} />
 					<Route exact path="/dashboard" component={Dashboard} />
 				</Switch>
 			</Router>
 		</MuiThemeProvider>
+		// <text>lololo</text>
 	) : <div id="loader"><CircularProgress /></div>
 }

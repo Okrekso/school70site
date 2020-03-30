@@ -61,11 +61,17 @@ function Register(props) {
 		</main>
 	)
 
-	async function onRegister() {
+	function onRegister() {
+		console.log("in regist");
 		try {
-			await firebase.register(name, email, password)
+			firebase.auth.createUserWithEmailAndPassword(email, password)
+			firebase.auth.currentUser.updateProfile({
+				displayName: name
+			});
 			props.history.replace('/dashboard')
 		} catch(error) {
+			console.log(error.message)
+
 			alert(error.message)
 		}
 	}

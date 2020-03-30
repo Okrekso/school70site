@@ -11,15 +11,14 @@ import Header from "./header/header";
 import TimerBlock from "./timerBlock/timerBlock";
 
 export default function renderSite(to) {
-  render(<Site />, to);
+  render(<App />, to);
 }
 
-function Site() {
-  return (
-    <>
-    {/* <text>lol</text> */}
-    <App/>
-    {/* <Header/> */}
-    </>
-  );
-}
+// function Site() {
+//   return (
+//     <>
+//     {/* <text>lol</text> */}
+//     <App/>
+//     </>
+//   );
+// }

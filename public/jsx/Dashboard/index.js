@@ -9,7 +9,7 @@ import styles from './styles';
 function Dashboard(props) {
 	const { classes } = props
 
-	if(!firebase.getCurrentUsername()) {
+	if(!firebase.getCurrentUsername) {
 		// not logged in
 		alert('Please login first')
 		props.history.replace('/login')
@@ -38,8 +38,8 @@ function Dashboard(props) {
 		</main>
 	)
 
-	async function logout() {
-		await firebase.logout()
+	function logout() {
+		auth.signOut
 		props.history.push('/')
 	}
 }
