@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './eventBlock.scss';
-import './media-style.scss';
 import EventCard from './eventCard';
 
 
@@ -13,6 +12,7 @@ function eventBlock(props){
 
     return(
     <div id="eventBlock">
+        <div id = "blockTitle">Не пропусти наші події</div>
         <EventCard title="Відпочинок в парку" 
             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptate voluptatibus est exercitationem at saepe tempora debitis? Voluptatem quod neque officia quae tempora facere nam soluta sit, eligendi explicabo voluptatibus!" 
             imgSrc="/img/1.jpg" 
