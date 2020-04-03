@@ -7,21 +7,19 @@ import Dashboard from '../Dashboard'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { CssBaseline, CircularProgress } from '@material-ui/core'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import firebase from "../../js/firebase";
+import { auth } from "../../js/firebase";
 
 const theme = createMuiTheme()
 
 export default function App() {
 
-	const [firebaseInitialized, setFirebaseInitialized] = useState(false)
+	const [CurrentUser, setCurrentUser] = useState(false)
 
 	 useEffect(() => {
-		 setFirebaseInitialized(firebase.auth.currentUser); 
-		 console.log(firebaseInitialized);
+		setCurrentUser(auth.currentUser);
 	 })
 
-
-	return firebaseInitialized !== false ? (
+	return CurrentUser !== false ? (
 		<MuiThemeProvider theme={theme}>
 			<CssBaseline />
 			<Router>
@@ -33,6 +31,5 @@ export default function App() {
 				</Switch>
 			</Router>
 		</MuiThemeProvider>
-		// <text>lololo</text>
 	) : <div id="loader"><CircularProgress /></div>
 }

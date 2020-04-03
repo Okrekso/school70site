@@ -3,7 +3,7 @@ import { Typography, Paper, Avatar, Button, FormControl, Input, InputLabel } fro
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import withStyles from '@material-ui/core/styles/withStyles'
 import { Link, withRouter } from 'react-router-dom'
-import firebase from "../../../js/firebase";
+import { auth } from "../../../js/firebase";
 import styles from './styles';
 
 function Register(props) {
@@ -62,18 +62,12 @@ function Register(props) {
 	)
 
 	function onRegister() {
-		console.log("in regist");
-		try {
-			firebase.auth.createUserWithEmailAndPassword(email, password)
-			firebase.auth.currentUser.updateProfile({
+		auth.createUserWithEmailAndPassword(email, password).then(()=>{
+			auth.currentUser.updateProfile({
 				displayName: name
-			});
+			})
 			props.history.replace('/dashboard')
-		} catch(error) {
-			console.log(error.message)
-
-			alert(error.message)
-		}
+		})
 	}
 }
 

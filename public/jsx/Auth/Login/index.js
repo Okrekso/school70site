@@ -3,7 +3,7 @@ import { Typography, Paper, Avatar, Button, FormControl, Input, InputLabel } fro
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import withStyles from '@material-ui/core/styles/withStyles'
 import { Link, withRouter } from 'react-router-dom'
-import firebase from "../../../js/firebase";
+import {auth} from "../../../js/firebase";
 import styles from './styles';
 
 
@@ -56,13 +56,11 @@ function SignIn(props) {
 	)
 
 	function login() {
-		console.log("in login")
-		try {
-			firebase.auth.signInWithEmailAndPassword(email, password)
+		auth.signInWithEmailAndPassword(email, password)
+		.then(
+			console.log(auth.currentUser),
 			props.history.replace('/dashboard')
-		} catch(error) {
-			alert(error.message)
-		}
+		)
 	}
 }
 
