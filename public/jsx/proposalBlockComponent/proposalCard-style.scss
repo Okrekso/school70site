@@ -1,0 +1,47 @@
+#proposalCard{
+    display: flex;
+    width: 30%;
+    font-family: Arial;
+
+    margin-bottom: 30px;
+}
+
+#cardContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-family: Roboto;
+    
+    color: #9E9E9E;
+
+    padding-left: 10px;
+
+    position: relative;
+    
+    #title{
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    #description{
+        margin: 4% 0 12% 0;
+    }
+    
+    img{
+        width: 15px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+#imgContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 80%;
+    }
+}
