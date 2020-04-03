@@ -3,13 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5%;
-    width: 80%;
+    width: 90%;
 }
 
 .currentEvent{
     display: flex;
     flex-direction: column;
-    min-height: 550px;
     width: 22%;
     // background: rgb(133, 95, 95);
     position: relative;
@@ -62,11 +61,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10% 10% 12.5% 10%;
-    height: 315px;
+    padding: 8%;
+    min-height: 250px;
 }
 .descriptionText{
-    font-size: 17px;
+    font-size: 0.8rem;
     line-height: 20px;
     color: #FFFFFF;
     font-family: Roboto;
@@ -84,9 +83,9 @@
     border: none;
     outline: none;
 
-    font-size: 12px;
+    font-size: 0.6rem;
     line-height: 14px;
 }
 
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); 

@@ -10,6 +10,7 @@ import { render } from "react-dom";
 import "../scss/global.scss";
 
 import EventBlock from "./eventBlockComponent/eventBlock";
+import ProposalBlock from "./proposalBlockComponent/proposalBlock";
 
 
 export default function renderSite(to) {
@@ -19,6 +20,7 @@ export default function renderSite(to) {
 function Site() {
   return (
     <div id="content">
+      <ProposalBlock/>
       <EventBlock/>  
     </div>
   );
