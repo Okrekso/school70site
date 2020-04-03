@@ -1,0 +1,27 @@
+#proposalBlock{
+    width: 90%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+#blockTitle{
+    width: 100%;
+
+    font-family: Arial;
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: #9E9E9E;
+
+    margin-bottom: 60px;
+}
+
+@media screen and(max-width: 1024px){
+    #proposalBlock{
+        width: 98%;
+    }
+}
+

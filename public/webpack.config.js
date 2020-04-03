@@ -27,7 +27,7 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         // include: [
         //   path.resolve(__dirname, 'scss')
         // ],
@@ -50,6 +50,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     overlay: true,
+    contentBase: "./",
     host: 'localhost',
     port: 5000,
   }
