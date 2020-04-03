@@ -17,7 +17,7 @@ import ProposalBlock from "./proposalBlockComponent/proposalBlock";
 
 
 export default function renderSite(to) {
-  render(<Site />, to);
+  render(<App />, to);
 }
 
 function Site() {
