@@ -65,4 +65,4 @@ node_modules/
 .env
 
 # custom
-/public/package-lock.json
+public/package-lock.json
