@@ -1,17 +1,14 @@
-html,
-body,
-div {
-    position: relative;
+#content{
+    width: 1920px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    align-items: center;
 }
 
-html,
-body,
 #container {
-    min-height: 100vh;
-    min-width: 100vw;
-    background: rgb(230, 230, 230);
+    margin-top: 0;
+    width: 1920;
+    display: flex;
+    justify-content: center;
 }
