@@ -7,7 +7,7 @@ import ProposalCard from './proposalCard'
 export default function ProposalBlock(){
     return(
         <div id = "proposalBlock">
-            <div id = "blockTitle">Наші пропозиції для дітей</div>
+            <div id = "blockTitle">Наші пропозиції для дітей.</div>
             <ProposalCard 
                 title = "Кухня" 
                 description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo beatae voluptatibus consequatur facilis quasi placeat nisi cum atque aspernatur."
