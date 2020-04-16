@@ -7,8 +7,8 @@ import React, {
 } from "react";
 import { render } from "react-dom";
 import App from './App';
-import Header from "./header/header";
-import TimerBlock from "./timerBlock/timerBlock";
+// import Header from "./header/header";
+// import TimerBlock from "./timerBlock/timerBlock";
 
 import "../scss/global.scss";
 
@@ -24,12 +24,13 @@ function Site() {
   return (
     <>
     {/* <text>lol</text> */}
-    <App/>
-    {/* <Header/> */}
-    </>
+    {/* <App/> */}
     <div id="content">
       <ProposalBlock/>
       <EventBlock/>  
+      
     </div>
+    {/* <Header/> */}
+    </>
   );
 }
