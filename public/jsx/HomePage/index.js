@@ -47,6 +47,16 @@ function HomePage(props) {
 					className={classes.submit}>
 					Dashboard
           		</Button>
+				  <Button
+					type="submit"
+					fullWidth
+					variant="contained"
+					color="secondary"
+					component={Link}
+					to="/medallists"
+					className={classes.submit}>
+					Medallists
+          		</Button>
 			</Paper>
 		</main>
 	)
