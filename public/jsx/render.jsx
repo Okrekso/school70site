@@ -6,31 +6,10 @@ import React, {
   useMemo
 } from "react";
 import { render } from "react-dom";
-import App from './App';
-// import Header from "./header/header";
-// import TimerBlock from "./timerBlock/timerBlock";
-
+import App from './App/index';
 import "../scss/global.scss";
-
-import EventBlock from "./eventBlockComponent/eventBlock";
-import ProposalBlock from "./proposalBlockComponent/proposalBlock";
 
 
 export default function renderSite(to) {
-  render(<Site />, to);
-}
-
-function Site() {
-  return (
-    <>
-    {/* <text>lol</text> */}
-    {/* <App/> */}
-    <div id="content">
-      <ProposalBlock/>
-      <EventBlock/>  
-      
-    </div>
-    {/* <Header/> */}
-    </>
-  );
+  render(<App />, to);
 }

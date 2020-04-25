@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './styles.css'
-import HomePage from '../HomePage'
+
+import HomePage from '../HomePage/HomePageComponent'
+
+import RegLog from '../RegLog'
 import Login from '../Auth/Login'
 import Register from '../Auth/Register'
 import Dashboard from '../Dashboard'
@@ -11,28 +14,40 @@ import firebase from "../../js/firebase";
 
 const theme = createMuiTheme()
 
+
+
 export default function App() {
 
-	const [firebaseInitialized, setFirebaseInitialized] = useState(false)
+	// const [firebaseInitialized, setFirebaseInitialized] = useState(true)
 
-	useEffect(() => {
-		// firebase.isInitialized().then(val => {
-		// 	setFirebaseInitialized(val)
-		// })
-	})
+	// useEffect(() => {
+	// 	firebase.isInitialized().then(val => {
+	// 		setFirebaseInitialized(val)
+	// 	})
+	// })
 
+	//firebaseInitialized !== false ?
 
-	return firebaseInitialized !== false ? (
-		<MuiThemeProvider theme={theme}>
-			<CssBaseline />
+	return (
+		// <MuiThemeProvider theme={theme}>
+		// 	<CssBaseline />
+		<div id = 'content'>	
 			<Router>
 				<Switch>
-					<Route exact path="/" component={HomePage} />
+					<Route exact path="/">
+						<HomePage />
+					</Route>
+						
 					{/* <Route exact path="/login" component={Login} /> */}
 					{/* <Route exact path="/register" component={Register} /> */}
 					<Route exact path="/dashboard" component={Dashboard} />
+					
 				</Switch>
 			</Router>
-		</MuiThemeProvider>
-	) : <div id="loader"><CircularProgress /></div>
+		
+		{/* // </MuiThemeProvider> */}
+		</div>
+	) 
+
+	// : <div id="loader"><CircularProgress /></div>
 }
