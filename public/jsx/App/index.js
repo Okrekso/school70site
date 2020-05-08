@@ -4,7 +4,7 @@ import HomePage from '../HomePage'
 import Login from '../Auth/Login'
 import Register from '../Auth/Register'
 import Dashboard from '../Dashboard'
-import Medallists from '../Medallists/indes';
+import Medallists from '../Medallists/medallistList';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { CssBaseline, CircularProgress } from '@material-ui/core'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
