@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.scss';
  
 function MedallistItem({item}){
     let styles = {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MedallistItem from './MedallistItem';
 import {db} from '../../js/firebase';
+import './style.scss';
 
 
 function MedallistsList(){

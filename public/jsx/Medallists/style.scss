@@ -83,7 +83,7 @@
     width: 100%;
     height: 100%;
   
-    background-color: #d0ed9dd2;
+    background-color: #deee75d2;
   
     position: absolute;
     top: 0;
@@ -97,14 +97,12 @@
   }
   .problem__content .title{
     padding: 10px 5px;
-    display: flex;
     color: #fff;
     background-color: black;
   }
   .problem__content .title .name {
-    text-align: left;
+    text-align: center;
     width: 100%;
-    align-items: flex-start;
   }
   .problem__content .title .pos {
     text-align: right;
@@ -159,8 +157,11 @@
   /*Hidden
   ==================*/
   .problem__description {
-    font-size: 14px;
-    color: #424242;
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    color: #000000;
+    text-align: center;
   }
   
 
