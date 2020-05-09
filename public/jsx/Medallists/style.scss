@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
 }
-.medallistslist{
+.medallistslistOne{
 
     margin-top: 50px;
     list-style-type: none;
@@ -47,8 +47,8 @@
     justify-content: space-evenly;
   }
   .image-item{
-    height: 300px;
-    width: 400px;
+    height: auto;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

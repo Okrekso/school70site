@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import MedallistItem from './MedallistItem';
 import {db} from '../../js/firebase';
-import "./style.scss";
 
-function Medallists(){
+
+function MedallistsList(){
   const [medallists, setMedallists] = useState([]);
 
   useEffect(() => {
@@ -12,12 +12,17 @@ function Medallists(){
     })
   console.log( medallists);
   },[]);
-  return(
-      <ul className="medallistslist">
-          {medallists.map(item =>{
-              <MedallistItem key={item.id}  item={item}/>
-          })}
-      </ul>
-  );
+  if(medallists.length == 0){
+    return (<div></div>);
+  }
+  else{
+    return(
+        <ul className="medallistslistOne">
+            {medallists.map(item =>{
+                return <MedallistItem key={item.id}  item={item}/>;
+            })}
+        </ul>
+    );
+  }
 }
-export default Medallists;
+export default MedallistsList;
