@@ -6,13 +6,17 @@ import HomePage from '../HomePage/HomePageComponent'
 import RegLog from '../RegLog'
 import Login from '../Auth/Login'
 import Register from '../Auth/Register'
-import Dashboard from '../Dashboard'
+//import Dashboard from '../Dashboard'
+
+import EventPage from '../EventPage/eventPage'
+import Gallery from '../GalleryComponent/GalleryComponent'
+
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { CssBaseline, CircularProgress } from '@material-ui/core'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import firebase from "../../js/firebase";
 
-const theme = createMuiTheme()
+// const theme = createMuiTheme()
 
 
 
@@ -37,11 +41,18 @@ export default function App() {
 					<Route exact path="/">
 						<HomePage />
 					</Route>
+
+					<Route path = "/event">
+						<EventPage />
+					</Route>
+
+					<Route path = "/gallery">
+						<Gallery />
+					</Route>
 						
 					{/* <Route exact path="/login" component={Login} /> */}
 					{/* <Route exact path="/register" component={Register} /> */}
-					<Route exact path="/dashboard" component={Dashboard} />
-					
+					{/* <Route exact path="/dashboard" component={Dashboard} /> */}
 				</Switch>
 			</Router>
 		

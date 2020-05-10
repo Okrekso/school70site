@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './proposalBlock-style.scss'
+import './ProposalBlock-style.scss'
 
 import ProposalCard from './proposalCard'
 

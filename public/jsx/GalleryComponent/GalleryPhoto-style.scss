@@ -1,0 +1,58 @@
+// #photoContainer{
+//     width: 300px;
+//     margin: 0 0 30px 10px;
+
+//     border: 1px solid #000;
+// }
+
+#photo{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+    margin-bottom: 30px;
+}
+
+#bigImage{
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    display: none;
+
+    #imgContainer{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+// #photoOpen{
+//     width: 400px;
+//     height: 300px;
+//     top: 150px;
+
+//     background: grey;
+    
+//     display: none;
+
+//     position: fixed;
+
+//     border: 1px solid red;
+//     z-index: 100;
+// }

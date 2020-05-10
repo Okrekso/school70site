@@ -52,4 +52,4 @@ function RegLog(props) {
 	)
 }
 
-export default withStyles(styles)(HomePage)
+export default withStyles
