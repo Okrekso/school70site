@@ -9,6 +9,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { CssBaseline, CircularProgress } from '@material-ui/core'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { auth } from "../../js/firebase";
+import Header from '../headerComponent/headerComponent'
 
 const theme = createMuiTheme()
 
@@ -16,9 +17,9 @@ export default function App() {
 
 	const [CurrentUser, setCurrentUser] = useState(false)
 
-	 useEffect(() => {
+	useEffect(() => {
 		setCurrentUser(auth.currentUser);
-	 })
+	})
 
 	return CurrentUser !== false ? (
 		<MuiThemeProvider theme={theme}>
