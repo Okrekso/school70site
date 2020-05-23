@@ -1,0 +1,69 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#currentEventPage{
+    width: 70%;
+
+    margin-top: 40px;
+
+    border: 1px solid #000;
+    display: flex;
+}
+
+#imgPart{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#contentPart{
+    width: 50%;
+
+    padding: 20px;
+}
+
+#eventDate{
+    // width: 50px;
+    // height: 50px;
+
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+
+    // background-color: grey;
+    // color: white;
+    width: 130px;
+    height: 86px;
+    background: #9E9E9E;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 15px;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 28 px;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#eventImg{
+    height: 100%;
+}
+
+#eventTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: grey;
+
+    margin-bottom: 40px;
+}

@@ -5,15 +5,16 @@ import './eventBlock.scss';
 import * as moment from 'moment'
 
 
-function EventCard(props){
+function EventCard({ eventId, title, description, imgSrc, date, color }){
 
-    const [title, setTitle] = useState(props.title);
-    const [description, setDescription] = useState(props.description);
-    const [imgSrc, setImgSrc] = useState(props.imgSrc);
-    const [date, setDate] = useState(props.date);
-    const [color, setColor] = useState(props.color);
+    // const [title, setTitle] = useState(props.title);
+    // const [description, setDescription] = useState(props.description);
+    // const [imgSrc, setImgSrc] = useState(props.imgSrc);
+    // const [date, setDate] = useState(props.date);
+    // const [color, setColor] = useState(props.color);
 
     const history = useHistory();
+    const curPath = useRouteMatch().path;
 
     return(
         <div id="block" className="currentEvent" style={{background: `${color}`}} onClick = {()=>history.push(props.url)}>
@@ -22,7 +23,7 @@ function EventCard(props){
             <div className="eventTitle">{title}</div>
             <div className="eventDescription">
                 <div className="descriptionText"><p>{description}</p></div>
-                <button>Читати далі</button>
+                <button onClick={() => history.push(`${curPath}/${eventId}`)}>Читати далі</button>
             </div>
         </div>
     );
@@ -31,3 +32,4 @@ function EventCard(props){
 
 
 export default EventCard;
+

@@ -11,10 +11,10 @@ export default function GalleryPhoto(props){
     function openPhoto(){
         var bigImage = $(bigImageRef.current);
         var isOpened = false;
-        bigImage.show(1000);
-        // if(!isOpened){
-        //     bigImage.show(1000);
-        // }
+        
+        if(!isOpened){
+            bigImage.show(1000);
+        }
         
     }
     function closePhoto(){

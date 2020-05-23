@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Link } from 'react'
 
 import './HomePage-styles.scss'
 
@@ -10,7 +10,7 @@ import EventBlock from '../eventBlockComponent/eventBlock'
 export default function HomePage(){
     return(
         <div id = 'homePageContainer'>
-            <NavBlock />
+            {/* <NavBlock /> */}
             <ProposalBlock />
             <EventBlock />
         </div>

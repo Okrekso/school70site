@@ -8,8 +8,9 @@ import Login from '../Auth/Login'
 import Register from '../Auth/Register'
 //import Dashboard from '../Dashboard'
 
-import EventPage from '../EventPage/eventPage'
+import EventsPage from '../EventsPage/eventsPage'
 import Gallery from '../GalleryComponent/GalleryComponent'
+import CurrentEventPage from '../currentEventPage/CurrentEventPage'
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { CssBaseline, CircularProgress } from '@material-ui/core'
@@ -42,8 +43,8 @@ export default function App() {
 						<HomePage />
 					</Route>
 
-					<Route path = "/event">
-						<EventPage />
+					<Route path = "/events">
+						<EventsPage />
 					</Route>
 
 					<Route path = "/gallery">
