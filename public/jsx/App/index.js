@@ -50,6 +50,7 @@ export default function App() {
 					<Route path = "/gallery">
 						<Gallery />
 					</Route>
+
 						
 					{/* <Route exact path="/login" component={Login} /> */}
 					{/* <Route exact path="/register" component={Register} /> */}

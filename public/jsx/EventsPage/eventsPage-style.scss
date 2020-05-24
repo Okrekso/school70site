@@ -1,13 +1,14 @@
-#eventsPage{
+#events{
     width: 90%;
 
+    border: 1px solid green;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    
 }
 
 @media screen and(max-width: 1024px){
-    #eventsPage{
+    #events{
         width: 98%;
     }
 }

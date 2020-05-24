@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 import './CurrentEventPage-style.scss'
 import * as moment from 'moment'
 
-export default function CurrentEventPage(props){
+export default function CurrentEventPage(title, description, imgSrc, date, color){
 
-    const [title, setTitle] = useState(props.title);
-    const [description, setDescription] = useState(props.description);
-    const [imgSrc, setImgSrc] = useState(props.imgSrc);
-    const [date, setDate] = useState(props.date);
+    // const [title, setTitle] = useState(props.title);
+    // const [description, setDescription] = useState(props.description);
+    // const [imgSrc, setImgSrc] = useState(props.imgSrc);
+    // const [date, setDate] = useState(props.date);
 
     return(
         <div id = 'currentEventPage'>

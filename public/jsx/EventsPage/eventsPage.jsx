@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Switch, Route, useRouteMatch } from "react-router-dom"
+import { Switch, Route, useRouteMatch, useParams } from "react-router-dom"
 
 import './eventsPage-style.scss'
 
@@ -7,10 +7,13 @@ import { db } from "../../js/firebase"
 import { CircularProgress } from '@material-ui/core';
 
 import EventCard from '../eventBlockComponent/eventCard'
+import CurrentEventPage from '../currentEventPage/CurrentEventPage'
 
 export default function EventsPage() {
   const [events, setevents] = useState([]);
   const path = useRouteMatch().path;
+  const { urlPage } = useParams();
+
   useEffect(() => {
     db.collection("events").get()
       .then((eventDocs) => {
@@ -28,21 +31,21 @@ export default function EventsPage() {
   if (events.length == 0)
     return <CircularProgress size={20} color="secondary" />
   return (
+    <div id = "events">
+      <Switch>
+        <Route exact path={path}>
+          {events.map(event => <EventCard eventId={event.eventId} description = {event.description} title={event.title} imgSrc = {event.imgSrc} color = {event.color} /> )}
+        </Route>
 
-    <Switch>
-      <Route exact path={path}>
-        <div>
-          <CircularProgress size={20} color="secondary" />
-          {/* {events.map(event => <EventCard eventId={event.eventId} id={event.id} title={event.title} />)} */}
-        </div>
-      </Route>
+        {/* <Route exact path={`${path}/:eventId`}>
+          {
+            events.map( event => event.eventID === :eventID ? <CurrentEventPage description = {event.description} title={event.title} imgSrc = {event.imgSrc} color = {event.color} /> )
+          }
+        </Route> */}
 
-      <Route exact path={`${path}/:eventId`}>
-        {/* <EventFull /> */}
-        <CircularProgress size={20} color="secondary" />
-      </Route>
-    </Switch>
+      </Switch>
 
+    </div>
   )
 }
 
