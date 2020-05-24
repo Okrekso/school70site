@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./proposalCard-style.scss";
+import './ProposalCard-style.scss'
 
 export default function ProposalCard(props) {
   const [title, setTitle] = useState(props.title);

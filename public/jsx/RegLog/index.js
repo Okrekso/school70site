@@ -5,7 +5,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import { Link } from 'react-router-dom'
 import styles from './styles';
 
-function HomePage(props) {
+function RegLog(props) {
 	const { classes } = props
 
 	return (
@@ -62,4 +62,4 @@ function HomePage(props) {
 	)
 }
 
-export default withStyles(styles)(HomePage)
+export default withStyles

@@ -1,0 +1,14 @@
+#events{
+    width: 90%;
+
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+@media screen and(max-width: 1024px){
+    #events{
+        width: 98%;
+    }
+}
